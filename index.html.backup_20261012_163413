@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OMEGA — Portail Applications</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #0f4c81 0%, #0a3a5f 50%, #082b47 100%);
+    min-height: 100vh;
+    padding: 40px 20px;
+    color: #fff;
+}
+.container { max-width: 1000px; margin: 0 auto; }
+.header { text-align: center; margin-bottom: 60px; }
+.header h1 {
+    font-size: 42px; font-weight: 800; letter-spacing: -1px; margin-bottom: 12px;
+    background: linear-gradient(135deg, #fff 0%, #10b981 100%);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.header p { font-size: 16px; color: rgba(255,255,255,0.7); }
+.apps-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 24px; }
+.app-card {
+    background: rgba(255,255,255,0.08); backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.15); border-radius: 20px;
+    padding: 32px; text-decoration: none; color: #fff;
+    transition: all 0.3s; display: flex; flex-direction: column;
+    position: relative; overflow: hidden;
+}
+.app-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
+    background: linear-gradient(90deg, #10b981, #0f4c81);
+    opacity: 0; transition: opacity 0.3s;
+}
+.app-card:hover { transform: translateY(-6px); background: rgba(255,255,255,0.12); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+.app-card:hover::before { opacity: 1; }
+.app-icon { font-size: 56px; margin-bottom: 20px; }
+.app-name { font-size: 22px; font-weight: 800; margin-bottom: 8px; }
+.app-desc { font-size: 14px; color: rgba(255,255,255,0.7); line-height: 1.5; }
+.app-url {
+    margin-top: 20px; font-size: 12px; font-family: monospace;
+    color: rgba(255,255,255,0.5); padding: 6px 10px;
+    background: rgba(0,0,0,0.2); border-radius: 6px;
+    display: inline-block; align-self: flex-start;
+}
+.footer { text-align: center; margin-top: 60px; font-size: 13px; color: rgba(255,255,255,0.5); }
+.badge {
+    position: absolute; top: 20px; right: 20px;
+    background: #10b981; color: #fff; font-size: 10px; font-weight: 700;
+    padding: 4px 10px; border-radius: 12px; text-transform: uppercase; letter-spacing: 1px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>OMEGA APPLICATIONS</h1>
+        <p>Portail d'accès · 192.168.1.90</p>
+    </div>
+    <div class="apps-grid">
+        <a href="/clinic/login" class="app-card">
+            <span class="badge">Actif</span>
+            <div class="app-icon">🏥</div>
+            <div class="app-name">OMEGA CLINIC</div>
+            <div class="app-desc">Gestion clinique & mutuelle de santé · Patients, RDV, consultations, pharmacie, facturation</div>
+            <div class="app-url">192.168.1.90/clinic/</div>
+        </a>
+        <a href="/stock" class="app-card">
+            <div class="app-icon">🚀</div>
+            <div class="app-name">OMEGA STOCK</div>
+            <div class="app-desc">Gestion commerciale · Produits, stock, POS caisse, ventes, facturation</div>
+            <div class="app-url">192.168.1.90/stock/</div>
+        </a>
+    </div>
+    <div class="footer">OMEGA INFORMATIQUE & CONSULTING · © 2026</div>
+</div>
+</body>
+</html>

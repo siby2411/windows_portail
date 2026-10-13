@@ -1,0 +1,1 @@
+[Fri Oct 02 06:44:30.289762 2026] [ssl:emerg] [pid 2108:tid 460] AH02565: Certificate and private key 192.168.1.90:443:0 from C:/laragon/etc/ssl/laragon.crt and C:/laragon/etc/ssl/laragon.key do not match

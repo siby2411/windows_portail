@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101827">
+<title>OMEGA INFORMATIQUE CONSULTING | Portail</title>
+
+<style>
+:root {
+    --bg: #f3f6fb;
+    --navy: #101827;
+    --blue: #2563eb;
+    --text: #172033;
+    --muted: #64748b;
+    --white: #ffffff;
+    --border: #e5eaf2;
+}
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+header {
+    padding: 30px 5%;
+    background: var(--navy);
+    color: white;
+    border-bottom: 4px solid var(--blue);
+}
+.header-inner {
+    max-width: 1250px;
+    margin: auto;
+}
+.brand {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #93c5fd;
+}
+header h1 {
+    margin: 12px 0 8px;
+    font-size: clamp(25px, 4vw, 38px);
+}
+header p {
+    margin: 0;
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+main {
+    max-width: 1250px;
+    margin: 35px auto;
+    padding: 0 22px;
+}
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.section-heading h2 { margin: 0; font-size: 23px; }
+.status {
+    color: #166534;
+    background: #dcfce7;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+    gap: 20px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    min-height: 215px;
+    padding: 23px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    box-shadow: 0 5px 18px rgba(15, 23, 42, .04);
+    transition: transform .2s, box-shadow .2s;
+}
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(15, 23, 42, .09);
+}
+.icon {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    background: #eff6ff;
+    color: var(--blue);
+    font-size: 24px;
+}
+.card h3 { margin: 0 0 9px; font-size: 19px; }
+.card p {
+    margin: 0 0 20px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.6;
+}
+.card a {
+    display: block;
+    margin-top: auto;
+    padding: 11px 14px;
+    border-radius: 8px;
+    background: var(--blue);
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+.card a:hover { background: #1d4ed8; }
+.note {
+    margin-top: 28px;
+    padding: 17px 20px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: white;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.7;
+}
+footer {
+    margin-top: 45px;
+    padding: 23px;
+    background: var(--navy);
+    color: #cbd5e1;
+    text-align: center;
+    font-size: 12px;
+}
+</style>
+</head>
+
+<body>
+<header>
+    <div class="header-inner">
+        <div class="brand">OMEGA INFORMATIQUE CONSULTING</div>
+        <h1>Portail professionnel</h1>
+        <p>Un point d'accès centralisé à vos applications de gestion.</p>
+    </div>
+</header>
+
+<main>
+    <div class="section-heading">
+        <h2>Mes applications</h2>
+        <span class="status">PORTAIL LOCAL</span>
+    </div>
+
+    <section class="grid">
+
+        <article class="card">
+            <div class="icon">🚗</div>
+            <h3>Gestion automobile</h3>
+            <p>Accès à l'application de gestion automobile et de suivi des véhicules.</p>
+            <a href="/auto/">Ouvrir l'application →</a>
+        </article>
+
+        <article class="card">
+            <div class="icon">🏥</div>
+            <h3>Gestion clinique</h3>
+            <p>Accès aux fonctions de gestion médicale et administrative de la clinique.</p>
+            <a href="/clinic/">Ouvrir l'application →</a>
+        </article>
+
+        <article class="card">
+            <div class="icon">📦</div>
+            <h3>Gestion de stock</h3>
+            <p>Accès aux produits, fournisseurs, clients et opérations commerciales.</p>
+            <a href="/stock/">Ouvrir l'application →</a>
+        </article>
+
+        <article class="card">
+            <div class="icon">🎓</div>
+            <h3>Gestion scolaire</h3>
+            <p>Accès à la gestion des étudiants, filières, classes et activités scolaires.</p>
+            <a href="/school/">Ouvrir l'application →</a>
+        </article>
+
+        <article class="card">
+            <div class="icon">🕒</div>
+            <h3>Gestion du pointage</h3>
+            <p>Accès aux fonctions de présence et de suivi du temps de travail.</p>
+            <a href="/pointage/">Ouvrir l'application →</a>
+        </article>
+
+        <article class="card">
+            <div class="icon">🚚</div>
+            <h3>Gestion de distribution</h3>
+            <p>Accès à l'application de gestion des distributions et des livraisons.</p>
+            <a href="/distrib/">Ouvrir l'application →</a>
+        </article>
+
+    
+        <article class="card">
+            <div class="icon">✉️</div>
+            <h3>OMEGA MAIL</h3>
+            <p>Accès à la messagerie professionnelle, aux contacts, aux listes et aux campagnes de communication.</p>
+            <a href="/omega_mail/">Ouvrir la messagerie →</a>
+        </article>
+</section>
+
+    <div class="note">
+        <strong>Information :</strong> ce portail centralise les accès, sans remplacer
+        les applications ni leurs systèmes de connexion. Chaque application conserve
+        ses propres fonctionnalités et sa gestion des utilisateurs.
+        Si une application affiche une erreur, vérifiez sa configuration Apache,
+        son routage et son authentification.
+    </div>
+</main>
+
+<footer>
+    OMEGA INFORMATIQUE CONSULTING · Portail de gestion · 2026
+</footer>
+</body>
+</html>
