@@ -107,6 +107,10 @@ main {
     background: #fffbeb;
     color: var(--gold);
 }
+.card.restaurant .icon {
+    background: #fef2f2;
+    color: #dc2626;
+}
 .card h3 { margin: 0 0 9px; font-size: 19px; }
 .card p {
     margin: 0 0 20px;
@@ -129,8 +133,12 @@ main {
 .card.gold a {
     background: var(--gold);
 }
+.card.restaurant a {
+    background: #dc2626;
+}
 .card a:hover { background: #1d4ed8; }
 .card.gold a:hover { background: #b45309; }
+.card.restaurant a:hover { background: #b91c1c; }
 .note {
     margin-top: 28px;
     padding: 17px 20px;
@@ -168,6 +176,14 @@ footer {
     </div>
 
     <section class="grid">
+
+        <!-- RESTAURANT & POS -->
+        <article class="card restaurant">
+            <div class="icon">🍽️</div>
+            <h3>Restaurant & POS</h3>
+            <p>Terminal caisse tactile, gestion des tables, réservations, menu, ingrédients et fiches techniques.</p>
+            <a href="/restaurant/">Ouvrir l'application →</a>
+        </article>
 
         <article class="card">
             <div class="icon">🚗</div>
